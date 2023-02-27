@@ -7,4 +7,19 @@
 
 body {
     background-color: $magnolia;
+    margin: 0;
+}
+
+h1 {
+    color: $denim;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+p {
+    font-weight: 400; 
+    font-size: 1rem; 
+    line-height: 25px;
+    margin: 0.5rem 0;
 }

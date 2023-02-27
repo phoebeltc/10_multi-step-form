@@ -1,10 +1,10 @@
 import './sass/styles.scss';
-import Header from './components/Header/Header';
+import Info from './pages/Info/Info';
 
 function App() {
   return (
     <div >
-      <Header />
+      <Info />
     </div>
   );
 }

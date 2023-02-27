@@ -1,2 +1,10 @@
 @import "../../sass/variables";
 
+img {
+    @media screen and (max-width: $layout-breakpoints-small) {
+    width: 100vw;
+    max-height: 33vh;
+    object-fit: cover;
+    }
+
+}

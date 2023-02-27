@@ -4,6 +4,7 @@ import bgMobile from '../../images/bg-sidebar-mobile.svg';
 
 const Header = () => {
     return <>
+    <div>
         <picture>
             <source srcSet={bgMobile} media="(max-width: 960px)" />
             <img
@@ -11,6 +12,7 @@ const Header = () => {
                 alt="Background"
             />
         </picture>
+    </div>
     </>
 }
 
