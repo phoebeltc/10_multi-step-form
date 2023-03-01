@@ -12,8 +12,16 @@ const Info = () => {
                     <p>Please provide your name, email address, and phone number.</p>
                     <form>
                         <p>
-                            <input></input>
-                            <label></label>
+                            <label for="name">Name</label>
+                            <input type="text" name="name" placeholder="e.g. Stephen King" required></input>
+                        </p>
+                        <p> 
+                            <label for="email">Email Address</label>
+                            <input type="text" name="email" placeholder="e.g. stephenking@lorem.com" required></input>
+                        </p>
+                        <p>
+                            <label for="phone">Phone Number</label>
+                            <input type="text" name="phone" placeholder="e.g. +1 234 567 890" required></input>
                         </p>
                     </form>
                 </div>
