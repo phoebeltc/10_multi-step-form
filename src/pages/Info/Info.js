@@ -25,7 +25,12 @@ const Info = () => {
                         </p>
                     </form>
                 </div>
-                <div className="footer">footer</div>
+                <div className="footer">
+                    <div className="footer-container">
+                        <p>Go Back</p>
+                        <button>Next Step</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

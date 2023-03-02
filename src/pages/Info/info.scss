@@ -18,6 +18,7 @@
         background-color: $white;
         padding: 1rem;
         display: flex;
+        border-radius: 15px;
     }
 }
 
@@ -25,6 +26,9 @@
     @media screen and (min-width: $layout-breakpoints-small) {
         display: flex;
         flex-direction: column;
+        width: 100%;
+        padding: 2.5em 5.6em 1em 6.25em;
+        justify-content: space-between;
     }
 }
 
@@ -42,22 +46,38 @@
     position: static;
     width: 100%;
     height: auto;
-    background-color: black;
+    padding: 0;
+    box-shadow: none;
     }
 
     p {
         color: $gray;
         display: flex;
         flex-direction: column;
+        @media screen and (min-width: $layout-breakpoints-small) {
+            margin-bottom: 1.45em;
+        }
         label {
             font-size: 0.75rem;
             font-weight: 400;
             color: $denim;
+            @media screen and (min-width: $layout-breakpoints-small) {
+                font-size:0.85rem;
+            }
         }
         input{
             border: 1px solid $light-gray;
             padding: 1em; 
             border-radius: 4px;
+            outline: none;
+            cursor: pointer;
+            &:focus {
+                border: 1px solid $purple;
+            }
+            @media screen and (min-width: $layout-breakpoints-small) {
+                padding: 1.05em 1em;
+                border-radius: 8px;
+            }
         }
     }
     ::placeholder { 
@@ -66,10 +86,58 @@
     }
 }
 
+form {
+    margin: 0.5em 0;
+    @media screen and (min-width: $layout-breakpoints-small) {
+        margin-top: 2em;
+    }
+}
+
 .footer {
     position: fixed;
     bottom:0;
+    background-color: $white;
+    height: 4.5rem;
+    width: 100%;
     @media screen and (min-width: $layout-breakpoints-small) {
         position: relative;
+        height: auto;
+    }
+    .footer-container {
+        display:flex;
+        justify-content: space-between;
+        padding: 0 1em;
+        align-items: center;
+        height: 100%;
+        @media screen and (min-width: $layout-breakpoints-small) {
+            padding: 0;
+        }
+
+        button {
+            background-color: $denim;
+            outline: none;
+            border: none;
+            color: $white;
+            padding: 0.875em 1.25em; 
+            border-radius: 4px;
+            cursor: pointer;
+            @media screen and (min-width: $layout-breakpoints-small) {
+                padding: 1em 1.5em;
+                font-size: 1rem;
+                border-radius: 8px;
+            }
+            &:hover {
+                background-color: #164A8A;
+            }
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 0.875rem;
+            color: $gray;
+            @media screen and (min-width: $layout-breakpoints-small) {
+                font-size:1rem;
+            }
+        }
     }
 }

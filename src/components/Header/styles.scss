@@ -6,5 +6,48 @@ img {
     max-height: 33vh;
     object-fit: cover;
     }
+}
 
+.header {
+    position: relative;
+}
+
+.header-container {
+    position: absolute;
+    top:0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1.875em;
+    gap: 1em;
+}
+
+// .header-procedure {
+//     margin: 0 auto;
+//     display: flex;
+// }
+
+.header-step-icon {
+    border: 1px solid $white;
+    height: 33px;
+    width: 33px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &.active {
+        border: 0;
+        background-color: $light-blue;
+        span {
+            color: $denim;
+        }
+    }
+
+    span {
+        font-size: 0.875rem;
+        color: $white;
+        font-weight: 700;
+    }
 }
